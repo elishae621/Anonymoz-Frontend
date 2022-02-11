@@ -1,0 +1,101 @@
+/* UNIVERSALS */
+section a, footer a {
+    text-decoration: none;
+    outline: none;
+}
+.jaflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rapw{
+    border: 2px solid white;
+  }
+.rapb{
+    border: 2px solid black;
+  }
+  section{
+    background-image: url(chat1.jpg);
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100vw;
+}
+
+/* Css for login/homepage */
+
+.spread{
+    display: block;
+    position: relative;
+}
+.welcome{
+    background-color: rgba(0,0,0,0.5);
+}
+.form, .formwel, .msg-box{
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+#place{
+    display: block;
+}
+#passwordHelp{
+    display: none;
+}
+
+
+
+@media (min-width: 768px){
+    .welcome-text{
+        line-height: 2.5rem;
+    }
+    .welcome{
+        padding: 10px 30px;
+        margin-bottom: 50px;
+        border: 2px solid white;
+        border-radius: 30px;
+    }
+}
+@media (max-width: 568px){
+
+    .welcome{
+        border-top: 5px solid #ffc107;
+        border-bottom: 5px solid #ffc107;
+    }
+}
+
+
+
+
+/* css for welcome/user page */
+
+@media (min-width: 768px){
+    .formwel{
+        margin: 5% 25%;
+    }
+}
+
+/* css for user page */
+
+.anoHeader{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.sharetab a{
+    text-decoration: none;
+}
+
+/* css for inbox */
+
+.inbox::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 70px;
+}
+.dummydiv{
+    display: block;
+    height: 50px;
+    width: 100%;
+}

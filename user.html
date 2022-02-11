@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ano.css">
+    <link rel="stylesheet" href="boot.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <title>AnonyMuz-User</title>
+</head>
+<body>
+    
+    <!--This section holds the user User basic info-->
+    <section class="bg-dark d-flex justify-content-between align-items-center">
+        <div class="container">
+            <div class="row g-6 py-5 text-light spread">
+                <h1 class="fw-bold anoHeader">Anony<span class="text-warning">Muz</span></h1>
+                <div class="userinfo text-center mt-5">
+                    <i class="bi bi-person-square mb-3 h1 text-light"></i>
+                     <h1 class="fw-bold mb-3" id="profileName"></h1>
+                     <input type="text" class="lead text-warning text-center" value="https://muz-link.dum" id="muz-link" disabled>
+                    <div class="my-3">
+
+                        <!-- The id #messages holds the number of anonymous messages in the user inbox -->
+                        <h3>Messages: <span class="text-warning" id="messages">0</span> </h3>
+                         <button class="btn btn-warning p-3 m-3"><a href="inbox.html" class="lead text-dark">Check Your Messages</a></button>
+                         <button class="btn btn-light p-3 m-3 copy-btn lead text-dark" data-bs-toggle="modal" data-bs-target="#copiedAlert" onclick="copyMuzlink();">Copy Your Muz-link</button>
+
+                         <p class="lead m-3">You’re good to go! Hurray share your muz-link to your social media handles  and get exciting anonymous messages from your friends. You won’t know who sent it .😜</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- This div holds the the to-share social media -->
+    <div class="bg-light" id="share">
+        <div class="container">
+            <div class="row g-4 p-5 bg-light">
+
+                <!-- facebook -->
+                <div class="col-6 col-md-3 sharetab">
+                    <a href="#"> <div class="shadow card bg-body p-3 text-center jaflex">
+                        <img src="facebook.png" alt="" class="img-fluid w-75">
+                        <p class="lead text-dark my-3">Facebook</p>
+                    </a> </div>
+                </div>
+
+                <!-- Whatsapp -->
+                <div class="col-6 col-md-3 sharetab">
+                  <a href="#"> <div class="shadow card bg-body p-3 text-center jaflex">
+                        <img src="whatsapp.png" alt="" class="img-fluid w-75">
+                        <p class="lead text-dark my-3">Whatsapp</p>
+                  </a> </div>
+                </div>
+
+                <!-- Instagram -->
+                <div class="col-6 col-md-3 sharetab">
+                    <a href="#">  <div class="shadow card bg-body p-3 text-center jaflex">
+                        <img src="instagram.png" alt="" class="img-fluid w-75">
+                        <p class="lead text-dark my-3">Instagram</p>
+                    </a>  </div>
+                </div>
+
+                <!-- Twitter -->
+                <div class="col-6 col-md-3 sharetab">
+                    <a href="#">  
+                         <div class="shadow card bg-body p-3 text-center jaflex">
+                             <img src="twitter.png" alt="" class="img-fluid w-75">
+                             <p class="lead text-dark my-3">Twitter</p>
+                    </a> </div>
+                </div>
+            </div>
+        </div>         
+    </div>    
+    <!--The Footer-->
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="text-center text-light py-5">
+                <h2 class="text-light">CONTACT</h2>
+                <p class="lead mb-3">To contact us, kindly send an email to <a href="#" class="text-muted">anonymuz@gmail.com</a></p>
+                <h6 class="lead">Copyright &copy; 2022 AnonyMuz</h6>
+                <p><a href="#" class="text-warning">Elisha Emmanuel</a>  |  <a href="#" class="text-warning">Kachi Amogu</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copied alert modal -->
+
+    <div class="modal fade" id="copiedAlert" tabindex="-1" aria-labelledby="alert" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-dark text-light text-center">
+            <div class="modal-body">
+              <i class="bi bi-check2-circle mb-3 h1 text-light"></i>
+              <p class="lead m-3">Link Copied!</p>
+            </div>
+            <div class="modal-body bg-dark jaflex">
+              <button type="button" class="btn btn-warning p-3 px-5" data-bs-dismiss="modal">Ok</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- <script src="jquery.js"></script> -->
+    
+    <script src="boot.js"></script>
+    <script src="ano.js"></script>
+
+</body>
+</html>
