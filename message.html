@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ano.css">
     <link rel="stylesheet" href="boot.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <title>AnonyMuz-Create Account</title>
 </head>
 <body>
@@ -15,8 +16,8 @@
         <div class="container">
             <div class="row g-6 py-5 text-light spread">
                 <div class="col-md py-3 mb-5 px-5 text-center welcome jaflex">
-                    <h1 class="fw-bold">Anony<span class="text-warning">Muz</span></h1>
-                    <p class="lead welcome-text">Send anonymous message to John, your identity won’t be known. It’s all for fun! Receiver won’t know send it!😎</p>
+                    <h1 class="fw-bold text-center mb-3"><a href="ano.html" class="text-light">Anony<span class="text-warning">Muz</span></a></h1>
+                    <p class="lead welcome-text">Send anonymous message to <span class="fw-bold text-warning">JOHN</span>, your identity won’t be known. It’s all for fun! Receiver won’t know you sent it!😎</p>
                 </div>
                 <!--The Textarea div-->
                 <div class="col-md login">
@@ -24,10 +25,10 @@
                         <!--the textarea -->
                         <div class="mb-3">
                             <label for="inputUsername" class="form-label lead">Type Here</label>
-                            <textarea class="form-control" name="" id=""  rows="6" required></textarea>
+                            <textarea class="form-control" name="" id="" placeholder="Write anonymous message..." rows="6" required></textarea>
                           </div>
                           <!-- The Message Submission button-->
-                          <button id="sendMessage" type="button" class="btn btn-warning text-center py-3 px-5 lead" data-bs-toggle="modal" data-bs-target="#alert">Send</button>
+                          <button id="sendMessage" type="button" class="btn btn-warning text-center py-3 px-5 lead" data-bs-toggle="modal" data-bs-target="#alert"><i class="bi bi-send"></i> Send</button>
                     </form>
                     <h5 class="lead py-5 text-center text-light fw-bold"><a href="ano.html" class="text-warning">  Create account</a> | <a href="login.html" class="text-warning">  Log in</a></h5>
                 </div>
@@ -39,8 +40,7 @@
     <footer class="footer bg-light">
         <div class="container">
             <div class="text-center text-dark py-5">
-                <h6 class="lead">Copyright &copy; 2022 AnonyMuz</h6>
-                <p><a href="#" class="text-primary">Elisha Emmanuel</a>  |  <a href="#" class="text-primary">Kachi Amogu</a></p>
+                <h6 class="lead">Copyright &copy; 2022 <br> <br> AnonyMuz Team</h6>
             </div>
         </div>
     </footer>
@@ -65,7 +65,7 @@
     <script src="jquery.js"></script>
     <script src="boot.js"></script>
     <script src="message.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    
 
 </body>
 </html>

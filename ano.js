@@ -12,7 +12,6 @@
 var username = document.getElementById("inputUsername"),
 messageForm = document.getElementById("messageForm"),
 psword1 = document.getElementById("inputPassword1"),
-psword2 = document.getElementById("inputPassword2"),
 profileName = document.getElementById("profileName"),
 place = document.getElementById("place"),
 checkbox = document.getElementById("inputCheckbox");
@@ -27,4 +26,9 @@ function sub() {
 profileName.innerHTML = localStorage.getItem("textvalue");
 
 
-
+// this code copies the muz-link to user clipboard
+function copyMuzlink(){
+    var copylink = document.getElementById("muz-link");
+    copylink.select();
+    navigator.clipboard.writeText(copylink.value);
+}

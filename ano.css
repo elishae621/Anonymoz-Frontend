@@ -9,6 +9,11 @@ section a, footer a {
     justify-content: center;
     align-items: center;
 }
+.jabflex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .rapw{
     border: 2px solid white;
   }
@@ -76,6 +81,12 @@ section a, footer a {
 }
 
 /* css for user page */
+
+#muz-link{
+    background: transparent;
+    outline: none;
+    border: none;
+}
 
 .anoHeader{
     position: absolute;
