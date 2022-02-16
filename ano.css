@@ -1,5 +1,5 @@
 /* UNIVERSALS */
-section a, footer a {
+section a, footer a,  button a, .grip{
     text-decoration: none;
     outline: none;
 }
@@ -12,6 +12,11 @@ section a, footer a {
 .jabflex{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+.jamflex{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 .rapw{
@@ -47,7 +52,9 @@ section a, footer a {
 #passwordHelp{
     display: none;
 }
-
+#fpText{
+    font-size: medium;
+}
 
 
 @media (min-width: 768px){
@@ -110,3 +117,20 @@ section a, footer a {
     height: 50px;
     width: 100%;
 }
+/* Css for reset homepage */
+#EmailAlert{
+    display: block;
+}
+@media (min-width: 1020px){
+    .spreadReset{
+        margin: 0 40vh;
+    }
+}
+
+/* Css for email.html */
+
+.bi-envelope-check, .welcome .bi-gear, .bi-sliders{
+    font-size: 50px;
+}
+
+/* Css settings page */

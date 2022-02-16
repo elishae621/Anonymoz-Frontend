@@ -32,3 +32,5 @@ function copyMuzlink(){
     copylink.select();
     navigator.clipboard.writeText(copylink.value);
 }
+
+
