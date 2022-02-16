@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="ano.css">
     <link rel="stylesheet" href="boot.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-    <title>AnonyMuz-Login</title>
+    <title>AnonyMuz-New Password</title>
 </head>
 <body>
     
@@ -20,30 +20,25 @@
                 <!--The login div-->
                 <div class="col-md login">
                     <h1 class="fw-bold text-center mb-3"><a href="ano.html" class="text-light">Anony<span class="text-warning">Muz</span></a></h1>
-                    <h4 class="text-center">Log in your account</h4>
-                    <p class="lead welcome-text text-center">Check out new anonymous messages in your inbox, share your muz-link to your social media handles and keep enjoying  the excitement!🤩</p>
-                    <!--Form-->
-                    <form action=""  class="formwel p-5" id="login-form">
-                        <!--Email partion -->
+                    <h4 class="text-center">Your Email has been confirmed <i class="bi bi-check2-all text-warning"></i></h4>                    <!--Form-->
+                    <form action="user.html"  class="formwel p-5" id="login-form">
+                        <!--New password partion -->
                         <div class="mb-3">
-                            <label for="login-username" class="form-label">Username</label>
-                            <input type="text" name="login-uname" class="form-control" id="login-username"  placeholder="input your username" required>
-                            <div id="passwordHelp" class="form-text text-danger">invalid username</div>
+                            <label for="login-username" class="form-label">Create New Password</label>
+                            <input class="form-control" id="password" name="password" type="password" pattern="^\S{4,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="input new password" required>
                           </div>
-                          <!--Password partion-->
+                          <!-- confirm New Password partion-->
                           <div class="mb-3">
-                            <label for="login-password" class="form-label">Password</label>
-                            <input type="password" name="login-pword" class="form-control" id="login-password" minlength="6" placeholder="input your password" required>
-                            <div id="passwordHelp" class="form-text text-danger">invalid password</div>
+                            <label for="confirm-password" class="form-label"> Confirm Password</label>
+                            <input class="form-control" id="password_two" name="password_two" type="password" pattern="^\S{4,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');" placeholder="verify password" required>
                           </div>                          
 
                           <!--Submission button-->
-                         <div class="jamflex">
-                            <button id="create-btn" type="submit" class="btn btn-warning text-center" onclick="loginSub();">Login</button>
-                            <a href="reset.html" class="lead text-warning" id="fpText">Forgot Password?</a>
-                         </div>
+                          <button id="create-btn" type="submit" class="btn btn-warning text-center">Submit</button>
+                          <p class="text-center text-muted my-3">You will be automatically redirected to your Profile</p>
                     </form>
-                    <h5 class="lead py-5 text-center text-light">Don't have an account? <br> |<br> <a href="ano.html#form" class="text-warning">  Create account</a></h5>                </div>
+                    <h5 class="lead py-5 text-center text-light fw-bold"><a href="ano.html" class="text-warning">  Create account</a> | <a href="login.html" class="text-warning">  Log in</a></h5>               
+                 </div>
             </div>
         </div>
     </section>
@@ -62,6 +57,7 @@
     <script src="jquery.js"></script>
     <script src="boot.js"></script>
     <script src="ano.js"></script>
+    <script src="newpswd.js"></script>
 
 </body>
 </html>

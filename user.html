@@ -15,6 +15,10 @@
     <section class="bg-dark d-flex justify-content-between align-items-center">
         <div class="container">
             <div class="row g-6 py-5 text-light spread">
+              <div class="alert alert-dark alert-dismissible fade show mt-5" role="alert">
+                Add your email to your profile! It'll help recover your password. <a href="settings.html#setEmail" class="fw-bold text-dark">Click here...</a>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
                 <h1 class="fw-bold anoHeader"><a href="user.html" class="text-light">Anony<span class="text-warning">Muz</span></a></h1>
                 <div class="userinfo text-center mt-5">
                     <i class="bi bi-person-square mb-3 h1 text-light"></i>
@@ -25,7 +29,8 @@
                         <!-- The id #messages holds the number of anonymous messages in the user inbox -->
                         <h3>Messages: <span class="text-warning" id="messages">0</span> </h3>
                          <button class="btn btn-warning p-3 m-3"><a href="inbox.html" class="lead text-dark">Check Your Messages <i class="bi bi-chevron-double-right"></i></a></button>
-                         <button class="btn btn-light p-3 m-3 copy-btn lead text-dark" data-bs-toggle="modal" data-bs-target="#copiedAlert" onclick="copyMuzlink();">Copy Your Muz-link <i class="bi bi-journals"></i></button>
+                         <button class="btn btn-light p-3 m-3 copy-btn text-dark lead" data-bs-toggle="modal" data-bs-target="#copiedAlert" onclick="copyMuzlink();">Copy Your Muz-link <i class="bi bi-journals"></i></button>
+                         <button class="btn btn-warning p-3 m-3"><a href="settings.html" class="lead text-dark"> Change Settings <i class="bi bi-gear text-dark"></i></a></button>
 
                          <p class="lead m-3">You’re good to go! Hurry share your muz-link to your social media handles  and get exciting anonymous messages from your friends. You won’t know who sent it .😜</p>
                     </div>
@@ -121,8 +126,7 @@
         </div>
       </div>
 
-    <!-- <script src="jquery.js"></script> -->
-    
+    <script src="jquery.js"></script>
     <script src="boot.js"></script>
     <script src="ano.js"></script>
 
